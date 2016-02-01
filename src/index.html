@@ -1,0 +1,122 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-controller="AppCtrl" ng-app="gulp-bp"> <!--<![endif]-->
+
+	<head>
+
+		<base href="/">
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>{{pageTitle}}</title>
+		<meta name="description" content="NG boilerplate to kick off new projects, with SASS, Karma-Jasmine integration and Gulp watch/build tasks">
+
+		<!-- mobile meta -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+
+		<!--[if IE]>
+			<link rel="shortcut icon" href="logo.ico">
+		<![endif]-->
+		<!-- or, set /favicon.ico for IE10 win -->
+		<meta name="msapplication-TileColor" content="#f01d4f">
+
+        <!-- font awesome from BootstrapCDN -->
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css" rel="stylesheet">
+
+        <!-- This is where our app's processed and compiled scss gets injected-->
+        <!-- build:appCss -->
+        <!-- endbuild -->
+
+        <!-- Bower installed vendor libraries -->
+        <!-- bower/gulp.buildcfg.js JSFiles -->
+        <!-- build:vendor -->
+        <!-- endbuild -->
+
+        <!-- build:vendorCss -->
+        <!-- endbuild -->
+
+        <!-- app templates from $templateCache -->
+        <!-- build:templatesApp -->
+        <!-- endbuild -->
+
+        <!-- common templates from $templateCache -->
+        <!-- build:templatesCommon -->
+        <!-- endbuild -->
+
+
+        <!-- This Angular app's JS files get injected here -->
+        <!-- inject:js -->
+        <!-- endinject -->
+
+        <!-- compiled App JS-->
+        <!-- build:app -->
+        <!-- endbuild -->
+
+
+
+	</head>
+<body ng-controller="NavCtrl">
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<md-toolbar class="md-toolbar-tools md-whiteframe-9dp staticNav" layout="row">
+    <div flex layout="row" layout-align="center center">
+        <div flex layout="row" layout-align="start center">
+            <md-button class="md-icon-button" aria-label="Menu" ng-click="openLeftMenu()">
+                <i class="fa fa-bars fa-lg"></i>
+            </md-button>
+            <h3>
+                <span>The Boilerplate</span>
+            </h3>
+            <md-button class="md-icon-button" aria-label="Menu" target="_blank" href="https://github.com/Lein-Haz/ng-gulp-karma-boilerplate">
+                <i class="fa fa-github fa-lg"></i>
+            </md-button>
+        </div>
+        <div flex layout="row" layout-align="end center">
+            <md-button class="md-icon-button" aria-label="Settings" ng-click="openLeftMenu()">
+                <i class="fa fa-bed fa-lg"></i>
+            </md-button>
+        </div>
+    </div>
+</md-toolbar>
+
+<md-sidenav flex md-component-id="left" class="main-nav">
+    <md-content layout="column">
+        <md-toolbar></md-toolbar>
+        <md-button class="navBtn md-primary md-hue-3" ui-sref="home">Home</md-button>
+        <md-button class="navBtn md-primary md-hue-3" ui-sref="test">Test</md-button>
+        <md-button class="navBtn md-primary md-hue-3" ui-sref="links">Links</md-button>
+        <md-button class="navBtn md-primary md-hue-3" ui-sref="home.events">Events (A home subview)</md-button>
+    </md-content>
+</md-sidenav>
+<div class="parallaxBG">
+    <img src="https://images.unsplash.com/photo-1429794890858-d3016a2bb73c?fit=clip&fm=jpg&bg=FFFFFF&w=1920" du-parallax y="background">
+</div>
+
+<div >
+    <md-content layout="row" layout-align="center start">
+        <div class="flex-75" ui-view="main" du-scroll-container></div>
+    </md-content>
+</div>
+
+
+</body>
+
+	
+
+
+
+
+
+
+
+	
+
+
+</html>

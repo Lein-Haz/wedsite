@@ -1,0 +1,54 @@
+md-sidenav{
+  position: fixed;
+}
+
+md-whiteframe + md-whiteframe{
+  margin-top: 2em;
+}
+
+.md-sidenav-backdrop{
+  position: fixed;
+}
+.nav{
+  .ul{
+    padding: 0;
+  }
+  li{
+    a{
+      margin: 0;
+    }
+  }
+}
+.navBtn{
+  margin:0;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border-radius: 0;
+  border-bottom: solid 1px black;
+}
+.staticNav{
+  position: fixed;
+  z-index: 200;
+}
+.parallaxBG{
+  z-index: -20;
+}
+
+.navbar {
+  margin-top: 20px;
+
+  small {
+    font-size: 60%;
+  }
+}
+
+.bpad{
+  padding-bottom: 1.5em;
+}
+.bmar{
+  margin-bottom: 1.5em;
+}
+
+.garbageSpace{
+  padding-bottom: 50em;
+}

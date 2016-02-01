@@ -1,0 +1,9 @@
+node_modules
+bower_files
+sftp-config.json
+/build
+/bin
+/testResults
+npm-debug.log
+.idea
+.git

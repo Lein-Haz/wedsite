@@ -1,0 +1,39 @@
+{
+  "name": "ng-gulp-boilerplate",
+  "version": "0.10.0",
+  "authors": [
+    "Phil Zahniel <paz5x4@mail.umsl.edu>"
+  ],
+  "description": "Description goes here",
+  "main": "app.js",
+  "keywords": [
+    "angularjs"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Lein-Haz/ng-gulp-karma-boilerplate",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.9",
+    "angular-mocks": "1.4.9",
+    "angular-animate": "1.4.9",
+    "bootstrap": "3.1.1",
+    "angular-bootstrap": "0.13.4",
+    "angular-ui-router": "0.2.15",
+    "moment": "2.10.6",
+    "angular-material": "1.0.4",
+    "angular-ui-grid": "3.0.6",
+    "ng-parallax": "0.1.8",
+    "angular-moment": "0.10.3",
+    "angular-input-masks": "2.1.0"
+  },
+  "resolutions": {
+    "angular": "1.4.9"
+  }
+}
