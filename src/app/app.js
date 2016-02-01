@@ -17,8 +17,8 @@ angular.module( 'wedSite', [
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider, $locationProvider ) {
-    $urlRouterProvider.otherwise( '/home' );
-    $locationProvider.html5Mode( true );
+        //$locationProvider.html5Mode( true );
+        $urlRouterProvider.otherwise( '/home' );
 })
 
 .config(function ($mdThemingProvider) {
