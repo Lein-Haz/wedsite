@@ -1,9 +1,9 @@
 {
-  "name": "ng-gulp-boilerplate",
+  "name": "wedsite",
   "version": "0.10.0",
   "license": "MIT",
-  "description": "An extended AngularJS Boilerplate to kick off new projects, with SASS, Karma-Jasmine integration and Gulp watch/build tasks",
-  "main": "src/app/app.js",
+  "description": "Congrats",
+  "main": "app.js",
   "devDependencies": {
     "browser-sync": "2.10.1",
     "connect": "3.4.1",
@@ -35,7 +35,7 @@
     "gulp-usemin": "0.3.20",
     "jasmine-core": "2.4.1",
     "jshint": "2.9.1",
-    "jshint-stylish": "^2.1.0",
+    "jshint-stylish": "2.1.0",
     "karma": "0.13.19",
     "karma-chrome-launcher": "0.2.2",
     "karma-firefox-launcher": "0.1.7",
@@ -54,7 +54,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/Lein-Haz/ng-gulp-karma-boilerplate"
+    "url": "https://github.com/Lein-Haz/wedsite"
   },
   "keywords": [
     "angular",
@@ -65,9 +65,9 @@
     "spa"
   ],
   "author": "Phil Zahniel",
-  "docs": "https://github.com/Lein-Haz/ng-gulp-karma-boilerplate/blob/master/README.md",
+  "docs": "https://github.com/Lein-Haz/wedsite/blob/master/README.md",
   "bugs": {
-    "url": "https://github.com/Lein-Haz/ng-gulp-karma-boilerplate/issues"
+    "url": "https://github.com/Lein-Haz/wedsite/issues"
   },
-  "homepage": "https://github.com/Lein-Haz/ng-gulp-karma-boilerplate"
+  "homepage": "https://github.com/Lein-Haz/wedsite"
 }

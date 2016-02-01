@@ -1,4 +1,4 @@
-angular.module('gulp-bp.links',[
+angular.module('wedSite.links',[
     'ui.router'
 ])
 

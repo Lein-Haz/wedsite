@@ -1,10 +1,9 @@
-# ng-gulp-boilerplate
-An extended AngularJS Boilerplate to kick off new projects, with SASS, Karma-Jasmine integration and Gulp watch/build tasks
+# Wed Site
+Everyone's getting hitched in October.
 
-# Features
-* SASS and karma integerated into build process
-* Gulp watch, build and local server tasks
-* folder structure pattern to build off of
+# About
+Nick: [www.github.com/ncivili](https://github.com/ncivili)<br>
+Phil: [www.github.com/Lein-Haz](https://github.com/Lein-Haz)<br>
 
 ## Download
 ```bash
@@ -50,9 +49,9 @@ Run this command to start BrowserSync serve and watch without going through buil
 - a recovery command that is merely step 10 of the above `gulp` command, if BrowserSync stops for some reason
 
 
-## Changelog
+## Changelog(DD.MM.YYYY)
 ### 0.10.0
-- First release, build working compile needs work<br>
+- Clone of https://github.com/Lein-Haz/ng-gulp-karma-boilerplate same issues
 31.01.2016
 
 

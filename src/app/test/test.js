@@ -1,4 +1,4 @@
-angular.module('gulp-bp.test',[
+angular.module('wedSite.test',[
     'ui.router'
 ])
 

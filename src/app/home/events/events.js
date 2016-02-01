@@ -1,7 +1,7 @@
 /**
  * Created by paz5x4 on 10/14/2015.
  */
-angular.module('gulp-bp.home.events', [
+angular.module('wedSite.home.events', [
     'ui.router'
 ])
 

@@ -1,18 +1,8 @@
 /**
- * @author  Phil Zahniel
- * @url     https://github.com/Lein-Haz/ng-gulp-karma-boilerplate
+ * @author  Phil Zahniel, Nick Civili
+ * @url     https://github.com/Lein-Haz/wedsite
  * @date    January 2016
  * @license MIT
- *
- * Thanks to Jozef Butko for creating the
- * original boilerplate that I built upon.
- * The project structure and build system
- * has been modified.
- *
- * source author  Jozef Butko
- * date    March 2015
- * repo     "https://github.com/jbutko/AngularJS-Boilerplate"
- * AngularJS Boilerplate: Build, watch and other useful tasks
  *
  * The build process consists of following steps:
  * 1. clean /build folder
@@ -59,7 +49,7 @@ gulp.task('images', function() {
   return gulp.src('./src/images/**/*')
     //.pipe($.if(!compileFlag, $.changed('./src/images')))
     //.pipe($.if(compileFlag, $.changed('./build/images')))
-    .pipe($.changed('./src/images'))
+    .pipe($.changed('build/images'))
     .pipe($.imagemin({
       optimizationLevel: 3,
       progressive: true,

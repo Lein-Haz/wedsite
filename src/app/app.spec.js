@@ -2,7 +2,7 @@ describe( 'AppCtrl', function() {
     describe( 'isCurrentUrl', function(){
        var AppCtrl, scope, $location;
 
-        beforeEach( module( 'gulp-bp' ) );
+        beforeEach( module( 'wedSite' ) );
 
         beforeEach( inject( function( $controller, _$location_, $rootScope ) {
             $location = _$location_;

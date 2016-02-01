@@ -1,6 +1,3 @@
-/**
- * Created by Phil on 1/24/2016.
- */
 module.exports = {
     /**
      * The `build_dir` folder is where our projects are compiled during
@@ -9,10 +6,6 @@ module.exports = {
      */
     build_dir: 'build',
     compile_dir: 'bin',
-    tester: function(){
-        return testFunc();
-    },
-    //TODO edit
     /**
      * This is the same as `app_files`, except it contains patterns that
      * reference vendor code (`vendor/`) that we need to place into the build
@@ -60,7 +53,3 @@ module.exports = {
         ]
     }
 };
-
-function testFunc(){
-    return 'Oh yeah';
-}

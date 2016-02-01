@@ -1,8 +1,9 @@
 {
-  "name": "ng-gulp-boilerplate",
+  "name": "wedsite",
   "version": "0.10.0",
   "authors": [
-    "Phil Zahniel <paz5x4@mail.umsl.edu>"
+    "Phil Zahniel <paz5x4@mail.umsl.edu>",
+    "Nick Civili"
   ],
   "description": "Description goes here",
   "main": "app.js",
@@ -10,7 +11,7 @@
     "angularjs"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/Lein-Haz/ng-gulp-karma-boilerplate",
+  "homepage": "https://github.com/Lein-Haz/wedsite",
   "private": false,
   "ignore": [
     "**/.*",

@@ -1,4 +1,4 @@
-angular.module( 'gulp-bp', [
+angular.module( 'wedSite', [
     'templates-app',
     'templates-common',
     'ui.router',
@@ -6,18 +6,19 @@ angular.module( 'gulp-bp', [
     'ui.utils.masks',
     'ui.utils.masks.helpers',
     'angularMoment',
-    'gulp-bp.home',
-    'gulp-bp.home.events',
-    'gulp-bp.test',
-    'gulp-bp.links',
+    'wedSite.home',
+    'wedSite.home.events',
+    'wedSite.test',
+    'wedSite.links',
     'ngMaterial',
     'ui.grid',
     'ngAnimate',
     'duParallax'
 ])
 
-.config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
+.config( function myAppConfig ( $stateProvider, $urlRouterProvider, $locationProvider ) {
     $urlRouterProvider.otherwise( '/home' );
+    $locationProvider.html5Mode( true );
 })
 
 .config(function ($mdThemingProvider) {
@@ -59,7 +60,7 @@ angular.module( 'gulp-bp', [
         ){
             $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
                 if ( angular.isDefined( toState.data.pageTitle ) ) {
-                    $scope.pageTitle = 'TheBP | ' + toState.data.pageTitle;
+                    $scope.pageTitle = 'wedSite | ' + toState.data.pageTitle;
                     $scope.$broadcast('stateChanged');
 
                 }
