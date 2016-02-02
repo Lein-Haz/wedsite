@@ -1,19 +1,17 @@
 var gulp            = require('gulp'),
-    buildConfig     = require('../gulp.buildCfg.js'),
+    buildConfig     = require('../gulp.buildcfg.js'),
     main            = require('../gulpfile.js'),
     $               = require('gulp-load-plugins')()
     ;
-var runSequence     = require('run-sequence').use(gulp);
+require('run-sequence').use(gulp);
 
 
 gulp.task('copy:js', function() {
-    var isCompile = main.isCompile();
     return gulp.src([
         '!src/**/*.spec.js',
         'src/**/*.js',
         '!src/assets/**/*.js'
     ], {base: './'})
-        .pipe($.if(isCompile, $.uglify()))
         //adds app non-test JS files to build dir
         .pipe(gulp.dest('build/'))
         ;

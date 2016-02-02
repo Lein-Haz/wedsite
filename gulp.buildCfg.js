@@ -1,5 +1,11 @@
 module.exports = {
     /**
+     * TODO may remove build and compile dir, if not being used any gulp tasks.
+     * Later test if vendor files can be dynamically picked up, while ensuring
+     * peer dependencies are met.
+     */
+
+    /**
      * The `build_dir` folder is where our projects are compiled during
      * development and the `compile_dir` folder is where our app resides once it's
      * completely built.
@@ -8,7 +14,7 @@ module.exports = {
     compile_dir: 'bin',
     /**
      * This is the same as `app_files`, except it contains patterns that
-     * reference vendor code (`vendor/`) that we need to place into the build
+     * reference vendor code (`bower_files/`) that we need to place into the build
      * process somewhere. While the `app_files` property ensures all
      * standardized files are collected for compilation, it is the user's job
      * to ensure non-standardized (i.e. vendor-related) files are handled
@@ -32,7 +38,6 @@ module.exports = {
             'bower_files/moment/min/moment.min.js',
             'bower_files/angular-moment/angular-moment.min.js',
             'bower_files/angular-ui-grid/ui-grid.min.js',
-            'bower_files/angular-input-masks/angular-input-masks-standalone.min.js',
             'bower_files/angular-animate/angular-animate.min.js',
             'bower_files/angular-material/angular-material.min.js',
             'bower_files/angular-animate/angular-animate.min.js',

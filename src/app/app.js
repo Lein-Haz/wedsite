@@ -16,38 +16,37 @@ angular.module( 'wedSite', [
     'duParallax'
 ])
 
-.config( function myAppConfig ( $stateProvider, $urlRouterProvider, $locationProvider ) {
-        //$locationProvider.html5Mode( true );
-        $urlRouterProvider.otherwise( '/home' );
-})
+.config(['$stateProvider','$urlRouterProvider' ,function ( $stateProvider, $urlRouterProvider ) {
+    $urlRouterProvider.otherwise( '/home' );
+}])
 
-.config(function ($mdThemingProvider) {
-        $mdThemingProvider.theme('default')
-            .dark()
-            .primaryPalette('grey',{
-                'default': '800',
-                'hue-1': '500',
-                'hue-2': '200',
-                'hue-3': '50'
-            })
-            .accentPalette('red',{
-                'default': '800'
-            })
-            .backgroundPalette('blue-grey', {
-                'default': '900',
-                'hue-1': '500',
-                'hue-2': '200',
-                'hue-3': '50'
-            })
-            .warnPalette('deep-purple', {
-                'default': '700'
-            })
+.config(['$mdThemingProvider', function ($mdThemingProvider) {
+    $mdThemingProvider.theme('default')
+        .dark()
+        .primaryPalette('grey',{
+            'default': '800',
+            'hue-1': '500',
+            'hue-2': '200',
+            'hue-3': '50'
+        })
+        .accentPalette('red',{
+            'default': '800'
+        })
+        .backgroundPalette('blue-grey', {
+            'default': '900',
+            'hue-1': '500',
+            'hue-2': '200',
+            'hue-3': '50'
+        })
+        .warnPalette('deep-purple', {
+            'default': '700'
+        })
 
-        ;
-    })
+    ;
+}])
 
-.run( function run () {
-})
+.run([ function run () {
+}])
 
 .controller( 'AppCtrl',[
         '$scope',

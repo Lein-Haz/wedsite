@@ -11,12 +11,17 @@ gulp.task('compileTasks', ['compileJs', 'compileCss']);
 gulp.task('compileJs', function() {
     //wraps JS in IIFE
     return gulp.src([
+        'build/bower_files/**/*.js',
         'module.prefix',
-        'build/**/*.js',
+        'build/src/**/*.js',
+        'build/templates*.js',
         '!build/**/*.spec.js',
         'module.suffix'
     ])
-        .pipe($.concat('mainapp.js'))
+        .pipe($.concat('concatapp.js'))
+        .pipe(gulp.dest('./build/'))
+        .pipe($.rename('mainapp.js'))
+        .pipe($.uglify())
         .pipe(gulp.dest('./bin/assets'));
 });
 
