@@ -13,7 +13,7 @@
  * 6. minify and copy all JS files
  * 7. copy fonts
  * 8. show build folder size
- * 
+ *
  */
 var gulp            = require('gulp'),
     browserSync     = require('browser-sync'),
@@ -22,7 +22,6 @@ var gulp            = require('gulp'),
     del             = require('del'),
     runSequence     = require('run-sequence'),
     buildConfig     = require('./gulp.buildCfg.js')
-
     ;
 
 /**
