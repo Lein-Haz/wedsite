@@ -32,7 +32,7 @@
         <!-- endbuild -->
 
         <!-- Bower installed vendor libraries -->
-        <!-- bower/gulp.buildcfg.js JSFiles -->
+        <!-- bower/gulp.buildCfg.js JSFiles -->
         <!-- build:vendor -->
         <!-- endbuild -->
 
@@ -86,29 +86,27 @@
     </div>
 </md-toolbar>
 
-<md-sidenav flex md-component-id="left" class="main-nav">
-    <md-content layout="column">
-        <md-toolbar></md-toolbar>
-        <md-button class="navBtn md-primary md-hue-3" ui-sref="home">Home</md-button>
-        <md-button class="navBtn md-primary md-hue-3" ui-sref="test">Test</md-button>
-        <md-button class="navBtn md-primary md-hue-3" ui-sref="links">Links</md-button>
-        <md-button class="navBtn md-primary md-hue-3" ui-sref="home.events">Events (A home subview)</md-button>
-    </md-content>
-</md-sidenav>
-<div class="parallaxBG">
-    <img src="https://images.unsplash.com/photo-1429794890858-d3016a2bb73c?fit=clip&fm=jpg&bg=FFFFFF&w=1920" du-parallax y="background">
-</div>
+<div layout="row" flex>
+	<div flex-gt-sm layout="column">
+		<md-sidenav flex md-component-id="left" class="md-sidenav-left md-whiteframe-z4" md-is-locked-open="$mdMedia('gt-md')">
+		    <md-content layout="column" style="padding-top: 10ex">
+		        <md-button class="navBtn md-raised md-hue-3" ui-sref="home">Home</md-button>
+		        <md-button class="navBtn md-raised md-hue-3" ui-sref="test">Test</md-button>
+		        <md-button class="navBtn md-raised md-hue-3" ui-sref="links">Links</md-button>
+		        <md-button class="navBtn md-raised md-hue-3" ui-sref="home.events">Events (A home subview)</md-button>
+		    </md-content>
+		</md-sidenav>
+	</div>
 
-<div >
-    <md-content layout="row" layout-align="center start">
-        <div class="flex-75" ui-view="main" du-scroll-container></div>
-    </md-content>
+  <md-content layout="row" layout-align="center start">
+      <div flex="80" ui-view="main" du-scroll-container></div>
+  </md-content>
+
 </div>
 
 
 </body>
 
-	
 
 
 
@@ -116,7 +114,8 @@
 
 
 
-	
+
+
 
 
 </html>
