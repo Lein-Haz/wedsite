@@ -3,8 +3,6 @@ angular.module( 'wedSite', [
     'templates-common',
     'ui.router',
     'ui.bootstrap',
-    'ui.utils.masks',
-    'ui.utils.masks.helpers',
     'angularMoment',
     'wedSite.home',
     'wedSite.home.events',
