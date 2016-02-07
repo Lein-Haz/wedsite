@@ -5,7 +5,7 @@ angular.module('wedSite.home.events', [
     'ui.router'
 ])
 
-    .config(function config( $stateProvider ) {
+    .config(['$stateProvider',function config( $stateProvider ) {
         $stateProvider.state( 'home.events', {
             url: '/events',
             parent: 'home',
@@ -17,7 +17,7 @@ angular.module('wedSite.home.events', [
             },
             data:{ pageTitle: 'Events' }
         });
-    })
+    }])
 
     .controller('EventsCtrl',[
         '$scope',

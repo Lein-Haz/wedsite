@@ -4,7 +4,6 @@
 var gulp            = require('gulp'),
     browserSync     = require('browser-sync'),
     reload          = browserSync.reload,
-    main            = require('../gulpfile.js')
     $               = require('gulp-load-plugins')()
     ;
 require('run-sequence').use(gulp);
@@ -53,7 +52,6 @@ gulp.task('server-compile', function(done) {
 // SASS task, will run when any SCSS files change & BrowserSync
 // will auto-update browsers
 gulp.task('sass', function() {
-    var isCompile = main.isCompile();
     return gulp.src('src/**/*.scss')
         .pipe($.sass({
             style: 'expanded'
