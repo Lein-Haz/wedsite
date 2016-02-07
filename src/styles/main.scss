@@ -1,15 +1,18 @@
 md-sidenav{
-  position: fixed;
+  // position: fixed;
+  z-index: 100;
 }
 
 md-whiteframe + md-whiteframe{
   margin-top: 2em;
 }
 
-.md-sidenav-backdrop{
-  position: fixed;
+.md-button {
+  border-radius: 3px;
+  border: solid black;
 }
 .nav{
+  // background-color: inherit;
   .ul{
     padding: 0;
   }
@@ -35,7 +38,7 @@ md-whiteframe + md-whiteframe{
 }
 
 .navbar {
-  margin-top: 20px;
+  margin-top: 2em;
 
   small {
     font-size: 60%;

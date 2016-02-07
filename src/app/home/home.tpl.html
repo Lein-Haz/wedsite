@@ -1,12 +1,17 @@
-<md-toolbar class="bmar" layout-align="center center">
-    <div>We aren't going to use panels</div>
-    <div>Use toolbars for md</div>
-</md-toolbar>
+<!doctype html>
+
+<md-whiteframe class="md-whiteframe-3dp md-accent" layout="column" flex style="padding-top: 5ex">
+  <md-toolbar flex class="bmar" layout-align="center center">
+      <div>We aren't going to use panels</div>
+      <div>Use toolbars for md</div>
+  </md-toolbar>
+</md-whiteframe>
 
 <md-whiteframe
         class="md-whiteframe-3dp md-accent"
         layout="column"
-        layout-align="center center">
+        layout-align="center start"
+        flex>
     <md-toolbar layout-align="center start" layout-padding>
         <div>This a heading</div>
     </md-toolbar>
@@ -28,10 +33,11 @@
 </md-whiteframe>
 
 <md-whiteframe
+        flex
         class="md-whiteframe-3dp md-accent"
         layout="column"
         layout-align="center center">
-    <md-toolbar layout-align="center start" layout-padding>
+    <md-toolbar layout-align="center" layout-padding flex>
         <div>Another frame</div>
     </md-toolbar>
     <md-content class="md-accent" layout-padding>
@@ -55,7 +61,3 @@
     <div ui-view="more"></div>
 </div>
 <div class="garbageSpace"></div>
-
-
-
-
