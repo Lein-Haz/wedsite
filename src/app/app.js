@@ -1,13 +1,17 @@
 angular.module( 'wedSite', [
     'templates-app',
     'templates-common',
+    'breeze.angular',
     'ui.router',
     'ui.bootstrap',
     'angularMoment',
+    'wedSite.services',
+    'wedSite.models',
     'wedSite.home',
     'wedSite.home.events',
     'wedSite.test',
     'wedSite.links',
+    'wedSite.apiDemo',
     'ngMaterial',
     'ui.grid',
     'ngAnimate',
@@ -84,3 +88,19 @@ angular.module( 'wedSite', [
     }])
 
 ;
+
+/**
+ * @ngdoc module
+ * @name wedSite.services
+ * @description
+ * All our services
+ */
+angular.module('wedSite.services',[]);
+
+/**
+ * @ngdoc module
+ * @name wedSite.models
+ * @description
+ * All our models
+ */
+angular.module('wedSite.models',[]);

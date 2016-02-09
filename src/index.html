@@ -87,19 +87,20 @@
 </md-toolbar>
 
 <div layout="row" flex>
-	<div flex-gt-sm layout="column">
-		<md-sidenav flex md-component-id="left" class="md-sidenav-left md-whiteframe-z4" md-is-locked-open="$mdMedia('gt-md')">
+	<div layout="column">
+		<md-sidenav flex md-component-id="left" class="md-sidenav-left md-whiteframe-dp7" md-is-locked-open="$mdMedia('gt-sm')">
 		    <md-content layout="column" style="padding-top: 10ex">
 		        <md-button class="navBtn md-raised md-hue-3" ui-sref="home">Home</md-button>
 		        <md-button class="navBtn md-raised md-hue-3" ui-sref="test">Test</md-button>
 		        <md-button class="navBtn md-raised md-hue-3" ui-sref="links">Links</md-button>
+		        <md-button class="navBtn md-raised md-hue-3" ui-sref="problems">Api Demo</md-button>
 		        <md-button class="navBtn md-raised md-hue-3" ui-sref="home.events">Events (A home subview)</md-button>
 		    </md-content>
 		</md-sidenav>
 	</div>
 
-  <md-content layout="row" layout-align="center start">
-      <div flex="80" ui-view="main" du-scroll-container></div>
+  <md-content flex layout="row" layout-align="center start">
+      <div flex ui-view="main" du-scroll-container></div>
   </md-content>
 
 </div>
