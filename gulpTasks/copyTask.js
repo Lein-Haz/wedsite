@@ -13,6 +13,10 @@ gulp.task('copy:js', function() {
         '!src/assets/**/*.js'
     ], {base: './'})
         //adds app non-test JS files to build dir
+        .pipe($.changed('build/'))
+        .pipe($.plumber())
+        .pipe($.jshint())
+        .pipe($.jshint.reporter('jshint-stylish'))
         .pipe(gulp.dest('build/'))
         ;
 });
