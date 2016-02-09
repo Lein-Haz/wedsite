@@ -32,6 +32,7 @@ require('./gulpTasks/sassTask.js');
 require('./gulpTasks/templateTask.js');
 require('./gulpTasks/bsyncTask.js');
 require('./gulpTasks/compileTask.js');
+require('./gulpTasks/watchTask.js');
 require('./karma/karmaGulpTask.js');
 
 var compileFlag = false;
@@ -140,7 +141,7 @@ gulp.task('build:size', function() {
     }));
 });
 
-gulp.task('lint', function () {
+gulp.task('fullLint', function () {
     return gulp.src('./src/**/*.js')
         .pipe($.jshint())
         .pipe($.jshint.reporter('jshint-stylish'))
@@ -168,6 +169,7 @@ gulp.task('templates',['templates:common', 'templates:app']);
 
 gulp.task('compile', function(callback){
     runSequence(
+        'fullLint',
         'compile:taskList',
         callback
     )
@@ -175,7 +177,7 @@ gulp.task('compile', function(callback){
 
 gulp.task('build', function (callback) {
     runSequence(
-        'lint',
+        'fullLint',
         'build:taskList',
         callback);
 });
