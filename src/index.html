@@ -68,8 +68,8 @@
 <md-toolbar class="md-toolbar-tools md-whiteframe-9dp staticNav" layout="row">
     <div flex layout="row" layout-align="center center">
         <div flex layout="row" layout-align="start center">
-            <md-button class="md-icon-button" aria-label="Menu" ng-click="openLeftMenu()">
-                <i class="fa fa-bars fa-lg"></i>
+            <md-button aria-label="Menu"  ng-click="openLeftMenu()" hide-gt-sm>
+                <md-icon class="fa fa-bars fa-lg"></md-icon>
             </md-button>
             <h3>
                 <span>Put a ring on it</span>
@@ -87,35 +87,24 @@
 </md-toolbar>
 
 <div layout="row" flex>
-	<div flex-gt-sm layout="column">
-		<md-sidenav flex md-component-id="left" class="md-sidenav-left md-whiteframe-z4" md-is-locked-open="$mdMedia('gt-md')">
-		    <md-content layout="column" style="padding-top: 10ex">
-		        <md-button class="navBtn md-raised md-hue-3" ui-sref="home">Home</md-button>
-		        <md-button class="navBtn md-raised md-hue-3" ui-sref="test">Test</md-button>
-		        <md-button class="navBtn md-raised md-hue-3" ui-sref="links">Links</md-button>
-		        <md-button class="navBtn md-raised md-hue-3" ui-sref="home.events">Events (A home subview)</md-button>
-		    </md-content>
-		</md-sidenav>
-	</div>
+    <div layout="vertical">
+        <md-sidenav flex md-component-id="left" class="md-sidenav-left md-whiteframe-7dp" md-is-locked-open="$mdMedia('gt-sm')">
+            <md-toolbar class="" layout="column" flex="100" style="padding-top: 10ex" layout-fill>
+                <md-button class="navBtn md-raised md-hue-3" ui-sref="home">Home</md-button>
+                <md-button class="navBtn md-raised md-hue-3" ui-sref="test">Test</md-button>
+                <md-button class="navBtn md-raised md-hue-3" ui-sref="links">Links</md-button>
+                <md-button class="navBtn md-raised md-hue-3" ui-sref="problems">Api Demo</md-button>
+                <md-button class="navBtn md-raised md-hue-3" ui-sref="home.events">Events (A home subview)</md-button>
+            </md-toolbar>
+        </md-sidenav>
+    </div>
 
-  <md-content layout="row" layout-align="center start">
-      <div flex="80" ui-view="main" du-scroll-container></div>
+  <md-content flex layout="vertical" >
+      <div flex ui-view="main" du-scroll-container style="padding-top: 10ex; padding-left: 5ex; padding-right: 5ex"></div>
   </md-content>
 
 </div>
 
-
 </body>
-
-
-
-
-
-
-
-
-
-
-
 
 </html>

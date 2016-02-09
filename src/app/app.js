@@ -20,27 +20,21 @@ angular.module( 'wedSite', [
 
 .config(['$mdThemingProvider', function ($mdThemingProvider) {
     $mdThemingProvider.theme('default')
-        .dark()
-        .primaryPalette('grey',{
-            'default': '800',
-            'hue-1': '500',
-            'hue-2': '200',
-            'hue-3': '50'
-        })
-        .accentPalette('red',{
-            'default': '800'
-        })
-        .backgroundPalette('blue-grey', {
-            'default': '900',
-            'hue-1': '500',
-            'hue-2': '200',
-            'hue-3': '50'
-        })
-        .warnPalette('deep-purple', {
-            'default': '700'
-        })
-
-    ;
+      .primaryPalette('indigo', {
+        'default': '600',
+        'hue-1': '900',
+        'hue-2': '700',
+        'hue-3': '200'
+      })
+      .accentPalette('indigo', {
+        'default': '400'
+      })
+      .backgroundPalette('indigo', {
+        'default': '200',
+        'hue-1': '900',
+        'hue-2': '700',
+        'hue-3': '200'
+      });
 }])
 
 .run([ function run () {
@@ -69,7 +63,7 @@ angular.module( 'wedSite', [
         '$scope',
         '$mdSidenav',
 
-        function($scope, $mdSidenav){
+        function($scope, $mdSidenav, $mdButton){
             $scope.snapOpts = {
                 tapToClose: true,
                 touchToDrag: true
