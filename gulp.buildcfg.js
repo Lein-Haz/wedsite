@@ -44,6 +44,8 @@ module.exports = {
             'bower_files/angular-aria/angular-aria.min.js',
             'bower_files/angular-scroll/angular-scroll.min.js',
             'bower_files/ng-parallax/angular-parallax.min.js',
+            'bower_files/breeze-client/build/breeze.min.js',
+            'bower_files/breeze-client/build/adapters/breeze.bridge.angular.js',
         ],
         css: [
             'bower_files/angular-ui-grid/ui-grid.min.css',

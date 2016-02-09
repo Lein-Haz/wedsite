@@ -20,7 +20,7 @@ gulp.task('watch', ['browser-sync', 'sass', 'cssnano'], function() {
     });
     gulp.watch(['src/index.html'], ['index']);
     gulp.watch(['src/app/**/*.tpl.html'], ['templates','bs-reload']);
-    gulp.watch(['src/app/**/*.js', 'js/*.js'], ['copy:js']);
+    gulp.watch(['src/app/**/*.js', 'src/common/**/*.js'], ['copy:js']);
     /**
      * Watchers for build directory
      */

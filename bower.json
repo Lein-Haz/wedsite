@@ -20,10 +20,11 @@
     "test",
     "tests"
   ],
-  "dependencies": {
+  "devDependencies": {
     "angular": "1.4.9",
     "angular-mocks": "1.4.9",
     "angular-animate": "1.4.9",
+    "breeze-client": "1.5.4",
     "bootstrap": "3.3.6",
     "angular-bootstrap": "1.1.2",
     "angular-ui-router": "0.2.17",
@@ -36,5 +37,8 @@
   "resolutions": {
     "angular": "1.4.9",
     "moment": "2.11.1"
+  },
+  "dependencies": {
+
   }
 }

@@ -1,0 +1,50 @@
+<div layout-padding>
+    <md-whiteframe
+            class="md-whiteframe-3dp md-accent"
+            layout="column"
+            layout-align="center start"
+            flex>
+        <md-toolbar layout-align="center start">
+            <div>Who did it</div>
+        </md-toolbar>
+        <md-content class="md-accent" layout-padding>
+            <div>
+                <button class="btn btn-default" ng-click="makeCall()">Lets see!</button>
+            </div>
+        </md-content>
+    </md-whiteframe>
+
+    <md-whiteframe
+            class="md-whiteframe-3dp md-accent"
+            layout="column"
+            flex>
+        <md-toolbar
+                layout-align="center center"
+                >
+            Whats going on?
+        </md-toolbar>
+        <md-content>
+            <p>Two things:</p>
+            <p>Firstly web requests all the data in the grids below comes from the internet</p>
+            <p>But only one grid has data?</p>
+            <p>Yeah so secondly, resolve functions & promises.  In the controller config object we create a resolve block that loads
+                team data.  The view won't load until the http promise resolves, we then can immediately load the data into the team grid.
+                The button makes a call for the player data, once the promise resolves we populate the grid in the "then callback" function.
+
+            </p>
+        </md-content>
+
+    </md-whiteframe>
+</div>
+
+<div layout-padding>
+    <md-content class="md-accent">
+        <div>Players</div>
+        <div ui-grid="playerGrid"></div>
+    </md-content>
+
+    <md-content class="md-accent">
+        <div>Teams</div>
+        <div ui-grid="teamGrid"></div>
+    </md-content>
+</div>
